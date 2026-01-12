@@ -1,0 +1,44 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Build folders
+out/
+build/
+target/
+dist/
+bin/
+
+# Gradle
+.gradle/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs and temp
+*.log
+*.tmp
+*.swp
+
+# Misc
+logs/
+*.log
+src/assets/image
