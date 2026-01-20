@@ -1,9 +1,9 @@
-package src.Pieces;
+package src.main.java.com.chess.Pieces;
 
-import src.Position.Position;
-import src.assets.Color;
+import src.main.java.com.chess.Position.Position;
+import src.main.java.com.chess.util.Color;
 
-import static src.ChessConstants.BOARD_SIZE;
+import static src.main.java.com.chess.util.ChessConstants.BOARD_SIZE;
 
 import java.util.ArrayList;
 

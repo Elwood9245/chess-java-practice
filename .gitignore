@@ -41,4 +41,4 @@ bin/
 # Misc
 logs/
 *.log
-src/assets/image
+src/main/resources/image
