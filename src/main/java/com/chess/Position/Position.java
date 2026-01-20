@@ -1,6 +1,6 @@
-package src.main.java.com.chess.Position;
+package com.chess.Position;
 
-import src.main.java.com.chess.Pieces.Piece;
+import com.chess.Pieces.Piece;
 
 public class Position {
     private int xPosition;

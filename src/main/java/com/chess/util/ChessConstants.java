@@ -1,4 +1,4 @@
-package src.main.java.com.chess.util;
+package com.chess.util;
 
 public class ChessConstants {
     public static final int BOARD_SIZE = 8;

@@ -1,4 +1,4 @@
-package src.main.java.com.chess.util;
+package com.chess.util;
 
 public enum Color {
     WHITE,

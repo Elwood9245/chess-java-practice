@@ -1,8 +1,8 @@
-package src.main.java.com.chess.Board;
+package com.chess.Board;
 
-import src.main.java.com.chess.Pieces.*;
-import src.main.java.com.chess.Position.Position;
-import src.main.java.com.chess.util.Color;
+import com.chess.Pieces.*;
+import com.chess.Position.Position;
+import com.chess.util.Color;
 
 import static java.lang.Math.abs;
 import static src.main.java.com.chess.util.ChessConstants.*;
