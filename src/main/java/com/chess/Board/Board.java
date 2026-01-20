@@ -1,13 +1,11 @@
-package src.Board;
+package src.main.java.com.chess.Board;
 
-import src.Pieces.Pawn;
-import src.Position.Position;
-import src.assets.Color;
+import src.main.java.com.chess.Pieces.*;
+import src.main.java.com.chess.Position.Position;
+import src.main.java.com.chess.util.Color;
 
 import static java.lang.Math.abs;
-import static src.ChessConstants.BLACK_PAWN_ROW;
-import static src.ChessConstants.BOARD_SIZE;
-import static src.ChessConstants.WHITE_PAWN_ROW;
+import static src.main.java.com.chess.util.ChessConstants.*;
 
 public class Board {
     private Position[][] board;
@@ -20,14 +18,38 @@ public class Board {
                 board[i][j] = new Position(i, j);
             }
         }
-        // initPiecesOnBoard();
+        initPiecesOnBoard(this);
     }
 
 
     public void initPiecesOnBoard(Board b) {
+
+        Class<?>[] backRowPieces = {
+                Rook.class, Knight.class, Bishop.class, Queen.class,
+                King.class, Bishop.class, Knight.class, Rook.class
+        };
+
         for (int i = 0; i < BOARD_SIZE; i++) {
             board[i][WHITE_PAWN_ROW].setPieceContained(new Pawn(Color.WHITE));
+
+            try {
+                Piece piece = (Piece) backRowPieces[i].getConstructor(Color.class).newInstance(Color.WHITE);
+                board[i][WHITE_KING_ROW].setPieceContained(piece);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        for (int i = 0; i < BOARD_SIZE; i++) {
             board[i][BLACK_PAWN_ROW].setPieceContained(new Pawn(Color.BLACK));
+
+            try {
+                Piece piece = (Piece) backRowPieces[i].getConstructor(Color.class)
+                        .newInstance(Color.BLACK);
+                board[i][BLACK_KING_ROW].setPieceContained(piece);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 

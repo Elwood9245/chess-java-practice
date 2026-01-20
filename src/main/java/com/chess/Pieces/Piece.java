@@ -1,7 +1,7 @@
-package src.Pieces;
+package src.main.java.com.chess.Pieces;
 
-import src.Position.Position;
-import src.assets.Color;
+import src.main.java.com.chess.Position.Position;
+import src.main.java.com.chess.util.Color;
 
 import java.util.ArrayList;
 

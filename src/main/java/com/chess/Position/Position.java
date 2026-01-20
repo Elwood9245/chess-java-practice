@@ -1,7 +1,6 @@
-package src.Position;
+package src.main.java.com.chess.Position;
 
-import src.Pieces.Piece;
-import static src.ChessConstants.BOARD_SIZE;
+import src.main.java.com.chess.Pieces.Piece;
 
 public class Position {
     private int xPosition;

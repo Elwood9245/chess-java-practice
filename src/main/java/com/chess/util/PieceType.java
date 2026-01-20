@@ -1,4 +1,4 @@
-package src.assets;
+package src.main.java.com.chess.util;
 
 public enum PieceType {
     KING,
