@@ -3,7 +3,7 @@ package com.chess.Pieces;
 import com.chess.Position.Position;
 import com.chess.util.Color;
 
-import static src.main.java.com.chess.util.ChessConstants.*;
+import static com.chess.util.ChessConstants.*;
 
 import java.util.ArrayList;
 

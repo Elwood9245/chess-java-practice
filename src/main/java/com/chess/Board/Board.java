@@ -5,7 +5,7 @@ import com.chess.Position.Position;
 import com.chess.util.Color;
 
 import static java.lang.Math.abs;
-import static src.main.java.com.chess.util.ChessConstants.*;
+import static com.chess.util.ChessConstants.*;
 
 public class Board {
     private Position[][] board;
